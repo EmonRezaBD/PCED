@@ -1,0 +1,107 @@
+﻿Build started 7/10/2024 9:23:54 AM.
+Logging verbosity is set to: Normal.     1>Project "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\CUDAImrovedCanny.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=12 /D__CUDACC_VER_MINOR__=2 /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" /I. /FIcuda_runtime.h /c F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\kernel.cu 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+     1>Project "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" (1) is building "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "D:\TEMP\Local\Temp\tmp0b985be68804490eb849723b41294d5c.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc142.pdb" -o F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\x64\Debug\kernel.cu.obj "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\kernel.cu"
+         
+         F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc142.pdb" -o F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\x64\Debug\kernel.cu.obj "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\kernel.cu" 
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+           class  AffineWarper : public PlaneWarper
+                  ^
+         
+         Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+           class  AffineWarper : public PlaneWarper
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+           class  BestOf2NearestMatcher : public FeaturesMatcher
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+           class  AffineBestOf2NearestMatcher : public BestOf2NearestMatcher
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+           class  FeatherBlender : public Blender
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+           class  MultiBandBlender : public Blender
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+           class  AffineWarper : public PlaneWarper
+                  ^
+         
+         Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+           class  AffineWarper : public PlaneWarper
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+           class  BestOf2NearestMatcher : public FeaturesMatcher
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+           class  AffineBestOf2NearestMatcher : public BestOf2NearestMatcher
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+           class  FeatherBlender : public Blender
+                  ^
+         
+     1>C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+           class  MultiBandBlender : public Blender
+                  ^
+         
+         kernel.cu
+         tmpxft_0000ac8c_00000000-7_kernel.cudafe1.cpp
+     1>Done Building Project "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" (CudaBuildCore target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Improved-Canny-master\PCED\CUDAImrovedCanny\x64\Debug\CUDAImrovedCanny.exe" /INCREMENTAL /ILK:"x64\Debug\CUDAImrovedCanny.ilk" /NOLOGO /LIBPATH:C:\opencvCUDA\build\x64\vc16\lib /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\lib\x64" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_world490d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cudart.lib cudadevrt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Improved-Canny-master\PCED\CUDAImrovedCanny\x64\Debug\CUDAImrovedCanny.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Improved-Canny-master\PCED\CUDAImrovedCanny\x64\Debug\CUDAImrovedCanny.lib" /MACHINE:X64 "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\x64\Debug\kernel.cu.obj"
+            Creating library F:\Improved-Canny-master\PCED\CUDAImrovedCanny\x64\Debug\CUDAImrovedCanny.lib and object F:\Improved-Canny-master\PCED\CUDAImrovedCanny\x64\Debug\CUDAImrovedCanny.exp
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         CUDAImrovedCanny.vcxproj -> F:\Improved-Canny-master\PCED\CUDAImrovedCanny\x64\Debug\CUDAImrovedCanny.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\CUDAImrovedCanny.tlog\unsuccessfulbuild".
+         Touching "x64\Debug\CUDAImrovedCanny.tlog\CUDAImrovedCanny.lastbuildstate".
+     1>Done Building Project "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+       "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" (Build target) (1) ->
+       "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" (CudaBuildCore target) (1:2) ->
+       (CudaBuildCore target) -> 
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(182): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::BestOf2NearestMatcher"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/matchers.hpp(236): warning #611-D: overloaded virtual function "cv::detail::FeaturesMatcher::match" is only partially overridden in class "cv::detail::AffineBestOf2NearestMatcher"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+         C:\opencvCUDA\build\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+
+
+       "F:\Improved-Canny-master\PCED\CUDAImrovedCanny\CUDAImrovedCanny\CUDAImrovedCanny.vcxproj" (Build target) (1) ->
+       (Link target) -> 
+         LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+
+    13 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.38
